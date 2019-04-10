@@ -8,11 +8,16 @@ cask 'docker'
 cask 'vagrant'
 cask 'virtualbox'
 
+# google
+cask 'google-cloud-sdk'
+
 # aws
 brew 'awscli'
 brew 'terraform'
+cask 'cyberduck'
 
 # dev
+brew 'autojump'
 brew 'cmake'
 brew 'ctags'
 brew 'git'
@@ -25,6 +30,9 @@ brew 'tmux'
 brew 'tree'
 
 cask 'iterm2'
+
+# ops
+brew 'telnet'
 
 # zsh
 brew 'zsh'
@@ -40,11 +48,17 @@ brew 'gradle'
 brew 'groovy'
 
 # JavaScript
-brew 'node'
+#brew 'node'
+brew 'nodebrew'
 brew 'yarn'
 
 # python
 brew 'python'
+
+# ruby
+brew 'rbenv'
+brew 'ruby-build'
+
 
 # docs
 brew 'doxygen'
@@ -52,7 +66,7 @@ brew 'graphviz'
 
 # editor
 brew 'vim'
-cask 'atom'
+#cask 'atom'
 cask 'visual-studio-code'
 
 # browser
@@ -66,6 +80,7 @@ brew 'redis'
 
 # tools
 cask 'clipy'
+cask 'kaleidoscope'
 cask 'karabiner-elements'
 cask 'shiftit'
 cask 'slack'
@@ -73,12 +88,14 @@ cask 'slack'
 # image
 brew 'imagemagick'
 brew 'exiftool'
+brew 'webp'
 cask 'imageoptim'
 
 # font
 tap 'sanemat/font'
 brew 'ricty', args: ['powerline', 'vim-powerline']
 
-# cf
+# PaaS
+brew 'heroku/brew/heroku'
 tap 'cloudfoundry/tap'
 brew 'cf-cli'
