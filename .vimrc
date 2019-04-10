@@ -20,7 +20,12 @@ if dein#load_state(s:dein_dir)
   call dein#add('itchyny/lightline.vim')
   call dein#add('scrooloose/nerdtree')
   call dein#add('scrooloose/syntastic')
+
+  " go
   call dein#add('fatih/vim-go')
+
+  " TypeScript
+  call dein#add('leafgarland/typescript-vim')
 
   call dein#end()
   call dein#save_state()
