@@ -32,6 +32,7 @@ brew 'tree'
 cask 'iterm2'
 
 # ops
+brew 'pwgen'
 brew 'telnet'
 
 # zsh
@@ -69,6 +70,9 @@ brew 'vim'
 #cask 'atom'
 cask 'visual-studio-code'
 
+# test
+cask 'insomnia'
+
 # browser
 cask 'firefox'
 cask 'google-chrome'
@@ -78,12 +82,17 @@ cask 'google-japanese-ime'
 brew 'mongodb'
 brew 'redis'
 
+# lang
+brew 'mecab'
+brew 'mecab-ipadic'
+
 # tools
 cask 'clipy'
 cask 'kaleidoscope'
 cask 'karabiner-elements'
 cask 'shiftit'
 cask 'slack'
+cask 'taskade'
 
 # image
 brew 'imagemagick'
@@ -99,3 +108,7 @@ brew 'ricty', args: ['powerline', 'vim-powerline']
 brew 'heroku/brew/heroku'
 tap 'cloudfoundry/tap'
 brew 'cf-cli'
+
+# win
+brew 'wine'
+
