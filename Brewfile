@@ -42,12 +42,6 @@ brew 'zsh-completions'
 # go
 brew 'go'
 
-# java
-#cask 'java'
-cask 'java8'
-brew 'gradle'
-brew 'groovy'
-
 # JavaScript
 #brew 'node'
 brew 'nodebrew'
