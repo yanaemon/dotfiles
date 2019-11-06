@@ -13,7 +13,9 @@ cask 'google-cloud-sdk'
 
 # aws
 brew 'awscli'
+brew 'amazon-ecs-cli'
 brew 'terraform'
+brew 'terraformer'
 cask 'cyberduck'
 
 # dev
@@ -28,6 +30,7 @@ brew 'peco'
 brew 's3cmd'
 brew 'tmux'
 brew 'tree'
+brew 'gettext'
 
 cask 'iterm2'
 
