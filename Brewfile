@@ -101,9 +101,12 @@ brew 'exiftool'
 brew 'webp'
 cask 'imageoptim'
 
+# video
+brew 'ffmpeg'
+
 # font
 tap 'sanemat/font'
-brew 'ricty', args: ['powerline', 'vim-powerline']
+#brew 'ricty', args: ['powerline', 'vim-powerline']
 
 # PaaS
 brew 'heroku/brew/heroku'
@@ -113,3 +116,7 @@ brew 'cf-cli'
 # win
 brew 'wine'
 
+# Mac App Store
+brew 'mas'
+mas 'trello', id: 1278508951
+mas 'ToyViewer ', id: 414298354
