@@ -76,17 +76,21 @@ cask 'google-chrome'
 cask 'google-japanese-ime'
 
 # db
-brew 'mongodb'
+brew 'postgresql'
 brew 'redis'
+tap 'mongodb/brew'
+brew 'mongodb-community'
 
 # lang
 brew 'mecab'
 brew 'mecab-ipadic'
 
 # tools
+cask 'alfred'
 cask 'clipy'
 cask 'kaleidoscope'
 cask 'karabiner-elements'
+cask 'kindle'
 cask 'shiftit'
 cask 'slack'
 cask 'taskade'
