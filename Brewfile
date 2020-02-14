@@ -22,6 +22,7 @@ cask 'cyberduck'
 brew 'autojump'
 brew 'cmake'
 brew 'ctags'
+brew 'gcc'
 brew 'git'
 brew 'icu4c'
 brew 'jq'
@@ -37,6 +38,7 @@ cask 'iterm2'
 # ops
 brew 'pwgen'
 brew 'telnet'
+brew 'vault'
 
 # zsh
 brew 'zsh'
@@ -49,6 +51,7 @@ brew 'go'
 #brew 'node'
 brew 'nodebrew'
 brew 'yarn'
+brew 'jsdoc3'
 
 # python
 brew 'python'
@@ -120,3 +123,7 @@ brew 'wine'
 brew 'mas'
 mas 'trello', id: 1278508951
 mas 'ToyViewer ', id: 414298354
+
+# Jira
+brew 'go-jira'
+mas 'Jira Cloud by Atlassian', id: 1475897096
