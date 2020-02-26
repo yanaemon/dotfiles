@@ -71,7 +71,7 @@ brew 'vim'
 cask 'visual-studio-code'
 
 # test
-cask 'insomnia'
+cask 'postman'
 
 # browser
 cask 'firefox'
