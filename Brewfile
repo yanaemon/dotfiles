@@ -16,6 +16,7 @@ brew 'awscli'
 brew 'amazon-ecs-cli'
 brew 'terraform'
 brew 'terraformer'
+brew 'tflint'
 cask 'cyberduck'
 
 # dev
