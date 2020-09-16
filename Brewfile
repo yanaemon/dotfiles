@@ -88,6 +88,11 @@ brew 'postgresql'
 brew 'redis'
 tap 'mongodb/brew'
 brew 'mongodb-community'
+brew 'mongodb-database-tools'
+
+# data
+tap 'fishtown-analytics/dbt'
+brew 'dbt'
 
 # lang
 brew 'mecab'
