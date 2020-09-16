@@ -102,6 +102,7 @@ brew 'mecab-ipadic'
 
 # tools
 cask 'alfred'
+cask 'bitwarden'
 cask 'clipy'
 cask 'kaleidoscope'
 cask 'karabiner-elements'
