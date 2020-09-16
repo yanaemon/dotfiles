@@ -77,6 +77,7 @@ brew 'vim'
 cask 'visual-studio-code'
 
 # test
+cask 'browserstacklocal'
 cask 'postman'
 
 # browser
