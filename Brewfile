@@ -19,6 +19,9 @@ brew 'terraformer'
 brew 'tflint'
 cask 'cyberduck'
 
+tap 'versent/homebrew-taps'
+brew 'saml2aws'
+
 # dev
 brew 'autojump'
 brew 'cmake'
