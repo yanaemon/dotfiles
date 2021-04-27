@@ -97,6 +97,7 @@ brew 'mongodb-database-tools'
 # data
 tap 'fishtown-analytics/dbt'
 brew 'dbt'
+brew 'embulk'
 
 # lang
 brew 'mecab'
