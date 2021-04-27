@@ -43,6 +43,7 @@ brew 'gettext'
 cask 'iterm2'
 
 # ops
+brew 'circleci'
 brew 'pwgen'
 brew 'telnet'
 brew 'vault'
