@@ -5,6 +5,7 @@ tap 'caskroom/versions'
 # vm
 brew 'docker'
 cask 'docker'
+brew 'dive'
 cask 'vagrant'
 cask 'virtualbox'
 
@@ -14,6 +15,7 @@ cask 'google-cloud-sdk'
 # aws
 brew 'awscli'
 brew 'amazon-ecs-cli'
+brew 'kayac/tap/ecspresso'
 #brew 'terraform'
 brew 'warrensbox/tap/tfswitch'
 brew 'terraformer'
