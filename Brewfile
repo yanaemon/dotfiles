@@ -114,6 +114,7 @@ cask 'karabiner-elements'
 cask 'kindle'
 cask 'shiftit'
 cask 'slack'
+cask 'tandem'
 cask 'taskade'
 
 # image
