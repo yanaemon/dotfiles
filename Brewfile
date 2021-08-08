@@ -1,6 +1,6 @@
 tap 'Homebrew/bundle'
-tap 'caskroom/cask'
-tap 'caskroom/versions'
+tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
 
 # vm
 brew 'docker'
@@ -134,9 +134,6 @@ tap 'sanemat/font'
 brew 'heroku/brew/heroku'
 tap 'cloudfoundry/tap'
 brew 'cf-cli'
-
-# win
-brew 'wine'
 
 # Mac App Store
 brew 'mas'
