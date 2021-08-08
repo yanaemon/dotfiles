@@ -5,7 +5,9 @@ setup_homebrew() {
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
 
-  sudo chown -R $(whoami) /usr/local/lib/pkgconfig
+  if [ -d /usr/local/lib/pkgconfig ]; then
+    sudo chown -R $(whoami) /usr/local/lib/pkgconfig
+  fi
   brew update
   brew bundle
 }
