@@ -4,7 +4,8 @@ tap 'homebrew/cask-versions'
 
 # vm
 brew 'docker'
-cask 'docker'
+brew 'docker-compose'
+brew 'colima'
 brew 'dive'
 cask 'vagrant'
 cask 'virtualbox'
