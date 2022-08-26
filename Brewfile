@@ -38,12 +38,15 @@ brew 'ctags'
 brew 'gcc'
 brew 'github/gh/gh'
 brew 'git'
+brew 'gitmoji'
 brew 'icu4c'
 brew 'jq'
+brew 'madge'
 brew 'nkf'
 brew 'openapi-generator'
 brew 'peco'
 brew 's3cmd'
+brew 'tig'
 brew 'tmux'
 brew 'tree'
 brew 'gettext'
@@ -147,5 +150,9 @@ mas 'trello', id: 1278508951
 mas 'ToyViewer ', id: 414298354
 
 # Jira
-brew 'go-jira'
+tap 'ankitpokhrel/jira-cli'
+brew 'jira-cli'
 mas 'Jira Cloud by Atlassian', id: 1475897096
+
+# Stripe
+brew 'stripe/stripe-cli/stripe'
