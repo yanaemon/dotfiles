@@ -5,8 +5,11 @@ tap 'homebrew/cask-versions'
 # vm
 brew 'docker'
 brew 'docker-compose'
+brew 'hyperkit'
+
 brew 'colima'
 brew 'dive'
+brew 'minikube'
 cask 'vagrant'
 cask 'virtualbox'
 
@@ -15,9 +18,11 @@ cask 'google-cloud-sdk'
 
 # aws
 brew 'awscli'
+cask 'aws-vault'
 brew 'amazon-ecs-cli'
 brew 'kayac/tap/ecspresso'
 #brew 'terraform'
+brew 'terraform_landscape'
 brew 'warrensbox/tap/tfswitch'
 brew 'terraformer'
 brew 'tflint'
