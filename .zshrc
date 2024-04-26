@@ -38,6 +38,9 @@ alias gp='git push'
 alias gr='git rebase'
 alias gs='git status'
 alias yfc='yarn force-commit'
+
+alias git_default_branch="git symbolic-ref --short refs/remotes/origin/HEAD | awk -F'[/]' '{print \$NF}'"
+
 function gpush() {
   cb=$(git branch --show-current)
   if [[ $cb =~ "$(whoami)/.*" ]]; then
@@ -51,18 +54,20 @@ function gpush() {
 
 function gopen() {
   cb=$(git branch --show-current)
+  default_branch=$(git_default_branch)
   if [[ $cb =~ "$(whoami)/.*" ]]; then
     echo "# open $cb $@"
     baseUrl="https://$(pwd | grep -o 'github.com/[^/]*/[^/]*')"
-    open "${baseUrl}/compare/master...$cb" $@
+    open "${baseUrl}/compare/${default_branch}...$cb" $@
   else
     echo "error: branch '$cb' may not be your branch." >&2
     return 1
   fi
 }
 
-alias gbd='() { \
-  base=${1:-"master"}
+function gbd() {
+  default_branch=$(git_default_branch)
+  base=${1:-${default_branch}}
   git checkout -q $base && \
   git for-each-ref refs/heads/ "--format=%(refname:short)" | \
   while read branch; do
@@ -70,16 +75,19 @@ alias gbd='() { \
     [[ $(git cherry $base $(git commit-tree $(git rev-parse "$branch^{tree}") -p $mergeBase -m _)) == "-"* ]] && \
     git branch -D $branch;
   done
-}'
+}
 
 alias gl=' git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Reset)%s %C(Blue)[%cn]%C(Red)%d" -10'
 alias glr='git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Reset)%s %C(Blue)[%cn]%C(Red)%d" --graph'
 alias gll='git log --date=short --pretty=format:"%C(Yellow)%h %C(Cyan)%cd %C(Reset)%s %C(Blue)[%cn]%C(Red)%d" --numstat'
 
-alias master='git checkout master && git pull origin master'
+function gmain() {
+  default_branch=$(git_default_branch)
+  git checkout $default_branch
+  git pull origin $default_branch
+}
 
 alias grc='rm -f /tmp/grc.log && wine /Applications/GRC\ Mobile/GRCmobile.exe >/tmp/grc.log 2>&1 &'
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
-
