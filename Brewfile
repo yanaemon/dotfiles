@@ -1,5 +1,4 @@
 tap 'Homebrew/bundle'
-tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 
 # vm
@@ -19,6 +18,7 @@ cask 'google-cloud-sdk'
 # aws
 brew 'awscli'
 cask 'aws-vault'
+brew 'keidarcy/tap/e1s'
 brew 'amazon-ecs-cli'
 brew 'kayac/tap/ecspresso'
 #brew 'terraform'
@@ -28,20 +28,16 @@ brew 'terraformer'
 brew 'tflint'
 cask 'cyberduck'
 
-tap 'versent/homebrew-taps'
-brew 'saml2aws'
-
 # dev
 brew 'autojump'
 brew 'cmake'
 brew 'ctags'
 brew 'gcc'
-brew 'github/gh/gh'
+brew 'gh'
 brew 'git'
 brew 'gitmoji'
 brew 'icu4c'
 brew 'jq'
-brew 'madge'
 brew 'nkf'
 brew 'openapi-generator'
 brew 'peco'
@@ -86,7 +82,6 @@ brew 'graphviz'
 
 # editor
 brew 'vim'
-#cask 'atom'
 cask 'visual-studio-code'
 
 # test
@@ -117,14 +112,14 @@ brew 'mecab-ipadic'
 # tools
 cask 'alfred'
 cask 'bitwarden'
-cask 'clipy'
 cask 'kaleidoscope'
 cask 'karabiner-elements'
 cask 'kindle'
 cask 'hammerspoon'
+cask 'notion'
+cask 'raycast'
 cask 'slack'
 cask 'tandem'
-cask 'taskade'
 
 # image
 brew 'imagemagick'
@@ -146,7 +141,6 @@ brew 'cf-cli'
 
 # Mac App Store
 brew 'mas'
-mas 'trello', id: 1278508951
 mas 'ToyViewer ', id: 414298354
 
 # Jira

@@ -2,7 +2,7 @@
 
 setup_homebrew() {
   if [ ! -x "`which brew`" ]; then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   fi
 
   if [ -d /usr/local/lib/pkgconfig ]; then
@@ -27,5 +27,17 @@ setup_zsh() {
   chsh -s /bin/zsh
 }
 
-setup_zsh
-setup_homebrew
+copy_dotfiles() {
+  dotfiles=(
+    .vimrc
+    .zshrc
+  )
+  for dotfile in $dotfiles; do
+    echo $dotfile
+    cat $dotfile >| "${ZDOTDIR:-$HOME}/${dotfile}"
+  done
+}
+
+#setup_zsh
+#setup_homebrew
+copy_dotfiles
