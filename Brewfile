@@ -30,6 +30,7 @@ cask 'cyberduck'
 
 # dev
 brew 'autojump'
+brew 'ast-grep'
 brew 'cmake'
 brew 'ctags'
 brew 'gcc'
@@ -65,11 +66,13 @@ brew 'go'
 # JavaScript
 #brew 'node'
 brew 'nodebrew'
+brew 'pnpm'
 brew 'yarn'
 brew 'jsdoc3'
 
 # python
 brew 'python'
+brew 'pyenv'
 
 # ruby
 brew 'rbenv'
@@ -112,12 +115,15 @@ brew 'mecab-ipadic'
 # tools
 cask 'alfred'
 cask 'bitwarden'
+cask 'cursor'
+cask 'deepl'
 cask 'kaleidoscope'
 cask 'karabiner-elements'
 cask 'kindle'
 cask 'hammerspoon'
 cask 'notion'
 cask 'raycast'
+cask 'session-manager-plugin'
 cask 'slack'
 cask 'tandem'
 

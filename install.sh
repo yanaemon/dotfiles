@@ -38,6 +38,13 @@ copy_dotfiles() {
   done
 }
 
-#setup_zsh
-#setup_homebrew
+setup_git() {
+  #git config --global user.email
+  #git config --global user.name
+  git config --global core.editor vim
+}
+
+setup_zsh
+setup_homebrew
+setup_git
 copy_dotfiles
