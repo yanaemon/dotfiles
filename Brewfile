@@ -76,7 +76,6 @@ brew 'jsdoc3'
 # python
 brew 'python'
 brew 'pyenv'
-brew 'pip3'
 brew 'pipx'
 
 # ruby
@@ -108,11 +107,6 @@ tap 'mongodb/brew'
 brew 'mongodb-community'
 brew 'mongodb-database-tools'
 cask 'mongodb-compass'
-
-# data
-tap 'fishtown-analytics/dbt'
-brew 'dbt'
-brew 'embulk'
 
 # lang
 brew 'mecab'
