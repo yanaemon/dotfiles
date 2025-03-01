@@ -10,8 +10,6 @@ cask 'orbstack'
 brew 'colima'
 brew 'dive'
 brew 'minikube'
-cask 'vagrant'
-cask 'virtualbox'
 
 # google
 cask 'google-cloud-sdk'
@@ -42,6 +40,7 @@ brew 'icu4c'
 brew 'jq'
 brew 'nkf'
 brew 'openapi-generator'
+brew 'oven-sh/bun/bun'
 brew 'peco'
 brew 's3cmd'
 brew 'tig'
@@ -51,8 +50,11 @@ brew 'gettext'
 
 cask 'iterm2'
 
+# AI
+brew 'ollama'
+
 # ops
-brew 'circleci'
+brew 'derailed/k9s/k9s'
 brew 'pwgen'
 brew 'telnet'
 brew 'vault'
@@ -74,11 +76,12 @@ brew 'jsdoc3'
 # python
 brew 'python'
 brew 'pyenv'
+brew 'pip3'
+brew 'pipx'
 
 # ruby
 brew 'rbenv'
 brew 'ruby-build'
-
 
 # docs
 brew 'doxygen'
@@ -87,9 +90,10 @@ brew 'graphviz'
 # editor
 brew 'vim'
 cask 'visual-studio-code'
+cask 'cursor'
+cask 'windsurf'
 
 # test
-cask 'browserstacklocal'
 cask 'postman'
 
 # browser
@@ -103,6 +107,7 @@ brew 'redis'
 tap 'mongodb/brew'
 brew 'mongodb-community'
 brew 'mongodb-database-tools'
+cask 'mongodb-compass'
 
 # data
 tap 'fishtown-analytics/dbt'
@@ -114,11 +119,8 @@ brew 'mecab'
 brew 'mecab-ipadic'
 
 # tools
-cask 'alfred'
 cask 'bitwarden'
-cask 'cursor'
 cask 'deepl'
-cask 'kaleidoscope'
 cask 'karabiner-elements'
 cask 'kindle'
 cask 'hammerspoon'
@@ -126,7 +128,6 @@ cask 'notion'
 cask 'raycast'
 cask 'session-manager-plugin'
 cask 'slack'
-cask 'tandem'
 
 # image
 brew 'imagemagick'
@@ -140,20 +141,6 @@ brew 'ffmpeg'
 # font
 tap 'sanemat/font'
 #brew 'ricty', args: ['powerline', 'vim-powerline']
-
-# PaaS
-brew 'heroku/brew/heroku'
-tap 'cloudfoundry/tap'
-brew 'cf-cli'
-
-# Mac App Store
-brew 'mas'
-mas 'ToyViewer ', id: 414298354
-
-# Jira
-tap 'ankitpokhrel/jira-cli'
-brew 'jira-cli'
-mas 'Jira Cloud by Atlassian', id: 1475897096
 
 # Stripe
 brew 'stripe/stripe-cli/stripe'
