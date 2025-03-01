@@ -36,6 +36,14 @@ copy_dotfiles() {
     echo $dotfile
     cat $dotfile >| "${ZDOTDIR:-$HOME}/${dotfile}"
   done
+
+  dotdirs=(
+    .hammerspoon
+  )
+  for dotdir in $dotdirs; do
+    echo $dotdir
+    cp -r $dotdir "${ZDOTDIR:-$HOME}"
+  done
 }
 
 setup_git() {
