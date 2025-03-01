@@ -5,6 +5,7 @@ tap 'homebrew/cask-versions'
 brew 'docker'
 brew 'docker-compose'
 brew 'hyperkit'
+cask 'orbstack'
 
 brew 'colima'
 brew 'dive'
