@@ -8,6 +8,11 @@ setup_homebrew() {
   if [ -d /usr/local/lib/pkgconfig ]; then
     sudo chown -R $(whoami) /usr/local/lib/pkgconfig
   fi
+
+  if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
+
   brew update
   brew bundle
 }
