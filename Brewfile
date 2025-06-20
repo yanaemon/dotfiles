@@ -50,7 +50,10 @@ brew 'gettext'
 cask 'iterm2'
 
 # AI
+cask 'claude'
+brew 'claude-squad'
 brew 'ollama'
+cask 'aqua-voice'
 
 # ops
 brew 'derailed/k9s/k9s'
