@@ -63,6 +63,9 @@ brew 'zsh-completions'
 # go
 brew 'go'
 
+# java
+brew 'java'
+
 # JavaScript
 #brew 'node'
 brew 'nodebrew'
