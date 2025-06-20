@@ -78,6 +78,7 @@ brew 'jsdoc3'
 brew 'python'
 brew 'pyenv'
 brew 'pipx'
+brew 'uv'
 
 # ruby
 brew 'rbenv'
