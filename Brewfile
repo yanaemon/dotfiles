@@ -100,6 +100,9 @@ cask 'firefox'
 cask 'google-chrome'
 cask 'google-japanese-ime'
 
+# mobile
+brew 'expo-orbit'
+
 # db
 brew 'postgresql'
 brew 'redis'
