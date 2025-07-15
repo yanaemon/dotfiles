@@ -121,6 +121,7 @@ brew 'mecab'
 brew 'mecab-ipadic'
 
 # tools
+brew 'terminal-notifier'
 cask 'bitwarden'
 cask 'deepl'
 cask 'karabiner-elements'
