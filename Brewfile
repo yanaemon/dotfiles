@@ -54,6 +54,7 @@ cask 'claude'
 brew 'claude-squad'
 brew 'ollama'
 cask 'aqua-voice'
+cask 'lm-studio'
 
 # ops
 brew 'derailed/k9s/k9s'
