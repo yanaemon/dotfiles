@@ -88,6 +88,9 @@ brew 'uv'
 brew 'rbenv'
 brew 'ruby-build'
 
+# rust
+brew 'rust'
+
 # docs
 brew 'doxygen'
 brew 'graphviz'
