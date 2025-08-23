@@ -29,6 +29,7 @@ bindkey '^R' peco-history-selection
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # alias
+alias difit='npx difit'
 alias g='git'
 alias gb='git branch'
 alias gc='git commit'
@@ -37,7 +38,6 @@ alias gd='git diff'
 alias gp='git push'
 alias gr='git rebase'
 alias gs='git status'
-alias yfc='yarn force-commit'
 
 alias git_default_branch="git symbolic-ref --short refs/remotes/origin/HEAD | awk -F'[/]' '{print \$NF}'"
 
@@ -86,8 +86,6 @@ function gmain() {
   git checkout $default_branch
   git pull origin $default_branch
 }
-
-alias grc='rm -f /tmp/grc.log && wine /Applications/GRC\ Mobile/GRCmobile.exe >/tmp/grc.log 2>&1 &'
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
