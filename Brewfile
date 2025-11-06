@@ -52,8 +52,10 @@ brew 'gettext'
 cask 'iterm2'
 
 # AI
+tap 'langgenius/dify'
 cask 'claude'
 brew 'claude-squad'
+brew 'dify'
 brew 'ollama'
 cask 'aqua-voice'
 cask 'lm-studio'
@@ -139,6 +141,7 @@ cask 'notion-calendar'
 cask 'raycast'
 cask 'session-manager-plugin'
 cask 'slack'
+cask 'slack-cli'
 
 # image
 brew 'imagemagick'
