@@ -1,0 +1,23 @@
+Brewfile
+  c47f57196656e46b 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.37",
+  "base_commit_sha": "d17e481014cf082a06c317219ef69b663c140118",
+  "prompts": {
+    "c47f57196656e46b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6028ba05-eeae-4629-8064-526d9dcc4853",
+        "model": "claude-opus-4-5-20251101"
+      },
+      "human_author": "yanaemon <hiroki.shirayanagi@gmail.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
