@@ -143,6 +143,7 @@ cask 'raycast'
 cask 'session-manager-plugin'
 cask 'slack'
 cask 'slack-cli'
+brew 'steipete/tap/gogcli'
 
 # image
 brew 'imagemagick'
