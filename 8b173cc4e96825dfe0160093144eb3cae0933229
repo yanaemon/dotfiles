@@ -1,0 +1,21 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.42",
+  "base_commit_sha": "8b173cc4e96825dfe0160093144eb3cae0933229",
+  "prompts": {
+    "97e45b66e35cb3d2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "649c72bc-0978-4df0-bafe-aa910266d69b",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "yanaemon <hiroki.shirayanagi@gmail.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    }
+  }
+}
