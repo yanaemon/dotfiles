@@ -66,6 +66,8 @@ cask 'lm-studio'
 brew 'derailed/k9s/k9s'
 brew 'pwgen'
 brew 'telnet'
+tap 'datadog-labs/pack'
+brew 'datadog-labs/pack/pup'
 
 # zsh
 brew 'zsh'
