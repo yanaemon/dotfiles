@@ -3,7 +3,6 @@ tap 'Homebrew/bundle'
 # vm
 brew 'docker'
 brew 'docker-compose'
-brew 'hyperkit'
 cask 'orbstack'
 
 brew 'colima'
@@ -16,12 +15,12 @@ cask 'google-cloud-sdk'
 # aws
 brew 'awscli'
 cask 'aws-vault'
-brew 'keidarcy/tap/e1s'
 brew 'amazon-ecs-cli'
 #brew 'terraform'
 brew 'terraform_landscape'
 brew 'pulumi'
-brew 'warrensbox/tap/tfswitch'
+cask 'warrensbox/tap/tfswitch', trusted: true
+
 brew 'terraformer'
 brew 'tflint'
 cask 'cyberduck'
@@ -40,9 +39,9 @@ brew 'icu4c'
 brew 'jq'
 brew 'yq'
 brew 'nkf'
-brew 'ngrok'
+cask 'ngrok'
 brew 'openapi-generator'
-brew 'oven-sh/bun/bun'
+brew 'bun'
 brew 'peco'
 brew 'rg'
 brew 's3cmd'
@@ -54,10 +53,10 @@ brew 'gettext'
 cask 'iterm2'
 
 # AI
-tap 'langgenius/dify'
 cask 'claude'
 brew 'claude-squad'
 cask 'codex'
+tap 'langgenius/dify', trusted: true
 brew 'dify'
 brew 'ollama'
 cask 'aqua-voice'
@@ -67,7 +66,7 @@ cask 'lm-studio'
 brew 'derailed/k9s/k9s'
 brew 'pwgen'
 brew 'telnet'
-tap 'datadog-labs/pack'
+tap 'datadog-labs/pack', trusted: true
 brew 'datadog-labs/pack/pup'
 
 # zsh
@@ -120,12 +119,12 @@ cask 'google-chrome'
 cask 'google-japanese-ime'
 
 # mobile
-brew 'expo-orbit'
+cask 'expo-orbit'
 
 # db
 brew 'postgresql'
 brew 'redis'
-tap 'mongodb/brew'
+tap 'mongodb/brew', trusted: true
 brew 'mongodb-community'
 brew 'mongodb-database-tools'
 cask 'mongodb-compass'
@@ -148,7 +147,6 @@ cask 'raycast'
 cask 'session-manager-plugin'
 cask 'slack'
 cask 'slack-cli'
-brew 'steipete/tap/gogcli'
 
 # image
 brew 'imagemagick'
@@ -164,4 +162,4 @@ tap 'sanemat/font'
 #brew 'ricty', args: ['powerline', 'vim-powerline']
 
 # Stripe
-brew 'stripe/stripe-cli/stripe'
+brew 'stripe/stripe-cli/stripe', trusted: true
