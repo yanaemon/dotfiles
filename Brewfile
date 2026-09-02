@@ -56,6 +56,7 @@ cask 'iterm2'
 cask 'claude'
 brew 'claude-squad'
 cask 'codex'
+brew 'hermes-agent'
 tap 'langgenius/dify', trusted: true
 brew 'dify'
 brew 'ollama'
